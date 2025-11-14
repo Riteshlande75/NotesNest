@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NoteNest</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>NoteNest</h1>
+      <div class="search">
+        <input id="searchInput" placeholder="Search notes..." />
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <form id="noteForm">
+          <input id="noteTitle" placeholder="Title" required />
+          <textarea id="noteContent" placeholder="Write your note..."></textarea>
+          <input id="noteTags" placeholder="Tags (comma separated)" />
+          <div class="form-actions">
+            <button type="submit" id="saveBtn">Save</button>
+            <button type="button" id="clearBtn">Clear</button>
+          </div>
+        </form>
+
+        <div class="notes-controls">
+          <button id="newNoteBtn">New Note</button>
+          <button id="seedBtn">Seed Demo Notes</button>
+        </div>
+
+        <ul id="notesList" class="notes-list"></ul>
+      </section>
+
+      <section class="right" id="preview">
+        <p class="empty">Select a note to preview/edit</p>
+      </section>
+    </main>
+
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

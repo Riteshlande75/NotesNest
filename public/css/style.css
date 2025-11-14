@@ -1,0 +1,48 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --danger:#ef4444;
+  --shadow: 0 6px 20px rgba(16,24,40,0.08);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+}
+
+.app{max-width:1100px;margin:28px auto;padding:18px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+header h1{margin:0;font-size:22px}
+.search input{padding:8px 12px;border-radius:8px;border:1px solid #e6edf3;min-width:220px}
+
+main{display:flex;gap:18px}
+.left{flex:0 0 360px}
+.right{flex:1;background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow);min-height:460px}
+
+form{background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px}
+input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;background:transparent;resize:vertical}
+textarea{min-height:120px}
+.form-actions{display:flex;gap:8px}
+button{background:var(--accent);color:#fff;border:none;padding:10px 12px;border-radius:8px;cursor:pointer}
+button#clearBtn{background:#6b7280}
+button.secondary{background:#fff;color:var(--accent);border:1px solid #e6edf3}
+
+.notes-controls{display:flex;gap:8px;margin-top:8px}
+.notes-list{list-style:none;padding:0;margin-top:12px}
+.notes-list li{background:var(--card);padding:12px;border-radius:10px;margin-bottom:8px;cursor:pointer;border:1px solid #eef2ff;display:flex;justify-content:space-between;align-items:center}
+.notes-list li .meta{font-size:12px;color:var(--muted)}
+.note-title{font-weight:600}
+
+.preview-title{font-size:20px;margin:0}
+.preview-meta{color:var(--muted);font-size:13px;margin:6px 0}
+.preview-content{white-space:pre-wrap;margin-top:12px}
+.note-actions{display:flex;gap:8px}
+.btn-danger{background:var(--danger);border:none;padding:8px;border-radius:8px;color:#fff;cursor:pointer}
+.empty{color:var(--muted)}
+footer{margin-top:12px;color:var(--muted);text-align:center}
